@@ -1,5 +1,5 @@
 # go-http-cache
-Create a simple calculator and try to render the page from a cache the 2nd time a user tries to load
+Create a simple calculator website and try to render the page from a cache the 2nd time a user tries to load
 
 ## server side cache
 
