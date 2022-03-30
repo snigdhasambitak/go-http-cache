@@ -32,7 +32,7 @@ The implementaton of these structs are pretty straightforward, so I’ll skip an
 
 `cached` is an http middleware that runs before the http handler and returns the content straight away if the page is already cached. If it’s not, the handler is executed and its body is cached for a given period of time. Because it’s a middleware, it’s really easy to enable and disable it for certain routes. Keep reading for a concrete example.
 
-I’m using RequestURI as the key for my storage because I want to cache the pages based on different paths and querystring. This means that a page with url /withCache and /withoutCache are cached independently.
+I’m using RequestURI as the key for my storage because I want to cache the pages based on different paths and querystring. This means that a page with url `/withCache` and `/withoutCache` are cached independently.
 
 The code of the middleware is as follow.
 
